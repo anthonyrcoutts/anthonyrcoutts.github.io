@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+</head>
+<body>
+
+    <header>
+        <h1>Projects</h1>
+        <nav>
+          <a href="about.html">About Me</a>
+          <a href="projects.html">Projects</a>
+          <a href="work.html">Work Experience</a>
+        </nav>
+      </header>
+
+  <main class="container">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+
+        <div class="projects-grid">
+            <div class="project">
+              <h3>Low-Income Student Success in CS</h3>
+              <p>
+                Current project working on analyzing a program that aids low-income computer science students in integrating and succeeding at WPI. 
+                Analyzing both quantative and qualitative survey data as well as reviewing different measures of academic success.
+              </p>
+              <div class="project-tags">
+                <span>R</span>
+                <span>Data Visualization</span>
+                <span>Data Analysis</span>
+              </div>
+              <p class="project-advisors"><strong>Advisors:</strong> Prof. Francesca Bernardi, Prof. Crystal Brown</p>
+            </div>
+
+        <div class="project">
+          <h3>Univeristy Syllabi Inclusivity Project</h3>
+          <p>Analyzed a dataset of 169 university syllabi for key inclusivity metrics. Determined which demographics of instructors were likely use 
+            inclusive metrics in their syllabi using classification trees and impurity measures (weighted entropy). Communicated findings through various data visualizations created using R and through a published research paper.
+          </p>
+          <div class="project-tags">
+            <span>R</span>
+            <span>Data Visualization</span>
+            <span>Data Analysis</span>
+            <span>Writting & Researching</span>
+          </div>
+          <p class="project-advisors"><strong>Advisors:</strong> Prof. Francesca Bernardi, Prof. Crystal Brown</p>
+
+          <p class="doi">
+            <strong>Published Paper:</strong>
+            <a href="https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1514339/full" target="_blank" rel="noopener noreferrer">
+              Research Paper
+            </a>
+          </p>
+        </div>
+      
+        <div class="project">
+          <h3>Mental Illness Prediction in Middle School Students</h3>
+          <p>Predicted mental health outcomes of middle school students. Using a dataset of over 500 middle school students,
+            predicted anxiety and depression outcomes of these students. Students at a middle school in MA took the Revised Child Anxiety and Depression
+            shortend 25 question questionaire (RCADS-25). This survey evaluates students at three different levels of depression and anxiety based on their responses 
+            (none/mild, moderate/borderline clinical and severe/clinical). Predicted which class of depression/anxiety students had based on their responses 
+            to the survey questions. From there used feature importances to determine which questions/symptoms were important for depression/anxiety. Perfomed 
+            analysis across gender and race.
+          </p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>SKLearn (Random Forests)</span>
+            <span>Data Analysis</span>
+            <span>Writting & Researching</span>
+          </div>
+          <p class="project-advisors"><strong>Advisors:</strong> Dr. Benjamin Nephew</p>
+        </div>
+      
+        <div class="project">
+          <h3>Presidential Campaign Schedule Optimization</h3>
+          <p>Optimized the campaign schedule of presidential candidate Kamala Haris for the 2024 election in a team with two other students. 
+            Used the change on win percentage 
+            after visiting a state to measure effect of visiting a state. Extrapolated effect of visiting a state of univisited states by grouping state 
+            and averaging effects amoungst the group. Found the cost of visisting certain states and similairly extrapolated data for unvisited states. Optimized 
+            which states Kamala Harris should visit to boost her win percentage in states and gain the most electoral college votes.
+          </p>
+          <div class="project-tags">
+            <span>Linear Optimization</span>
+            <span>Python</span>
+            <span>Data Collection</span>
+          </div>
+          <p class="project-advisors"><strong>Groupmates:</strong> Tora Ito, Floris Huiskers</p>
+
+          <p class="doi">
+            <strong>Video:</strong>
+            <a href="https://youtu.be/uCw0_R7rsG4" target="_blank" rel="noopener noreferrer">
+                Presidential Campaign Schedule Optimization
+            </a>
+          </p>
+        </div>
+
+        <div class="project">
+            <h3>STEM Faculty Launch Project</h3>
+            <p>
+                Analyzed the success of the STEM Faculty Launch program held at WPI from 2015-2020. The program was designed for minorities looking to 
+                pursure a career in higher education in STEM fields. Analyzed application data to review where aplicants came from and designed 
+                an animated plot for it. Analyzed the job outcome those who attended the faculty launch vs those who applied but did not attend. Filled in missing 
+                job outcome data using open sources such as Linkedin and personal webpages.
+            </p>
+            <div class="project-tags">
+              <span>R</span>
+              <span>Data Visualization</span>
+              <span>Data Analysis</span>
+              <span>Data Collection</span>
+            </div>
+            <p class="project-advisors"><strong>Advisors:</strong> Prof. Francesca Bernardi</p>
+          </div>
+
+          <div class="project">
+            <h3>2025 March Madness Bracket Simulator</h3>
+            <p>
+                Extracted advanced statistical data from college basketball teams in previous March Madness tournaments. Ran a random forest predictor 
+                to predict what round teams would make it to on the data. Used feature importances to see what stats were important for winning in the tournament. 
+                Built a bracket in Excel with current teams. Created a score function for each team using the feature importances from the random forest as weights 
+                for the different stats with a randmized multiplier attatched to the function. Team with the higher score in each matchup advanced to the next round 
+                until a champion was crowned. Ran 500 simulations in Excel. 
+            </p>
+            <div class="project-tags">
+              <span>Python</span>
+              <span>SKLearn (Random Forests)</span>
+              <span>R</span>
+              <span>Excel</span>
+              <span>Data Analysis</span>
+              <span>Data Collection</span>
+            </div>
+      </div>
+
+      <footer>
+        <div class="social-links" aria-label="Social media links" role="contentinfo">
+          <a href="https://www.linkedin.com/in/anthony-coutts-3626a2279/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fab fa-linkedin fa-lg"></i>
+          </a>
+          <a href="https://github.com/anthonyrcoutts" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fab fa-github fa-lg"></i>
+          </a>
+          <a href="https://instagram.com/anthony_coutts" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+        </div>
+      </footer>
+
+</body>
+</html>
