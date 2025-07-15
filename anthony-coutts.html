@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anthony Coutts Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+    <style>
+    .gradient-bg {
+        background: linear-gradient(135deg, #dc2626 0%, #7f1d1d 100%);
+    }
+    .card-hover {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+    .skill-tag {
+        transition: all 0.3s ease;
+    }
+    .skill-tag:hover {
+        transform: scale(1.05);
+    }
+    </style>
+
+
+<body class="antialiased bg-white text-gray-900">
+
+
+
+<!-- Navigation Bar -->
+<nav class="fixed top-0 w-full bg-white z-50 shadow px-8 py-6 text-lg">
+  <div class="mx-auto px-4 w-11/12 max-w-8xl flex justify-between items-center h-16">
+    <div class="text-4xl font-bold text-600">Anthony Coutts</div>
+    <div class="hidden md:flex space-x-6 font-medium">
+<a href="#home" class="text-2xl hover:text-red-600 transition">Home</a>
+<a href="#about" class="text-2xl hover:text-red-600 transition">About</a>
+<a href="#projects" class="text-2xl hover:text-red-600 transition">Projects</a>
+<a href="#experience" class="text-2xl hover:text-red-600 transition">Experience</a>
+<a href="#contact" class="text-2xl hover:text-red-600 transition">Contact</a>
+    </div>
+    <button id="mobile-menu-btn" class="md:hidden text-2xl">☰</button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2">
+<a href="#home" class="text-2xl hover:text-red-600 transition">Home</a>
+<a href="#about" class="text-2xl hover:text-red-600 transition">About</a>
+<a href="#projects" class="text-2xl hover:text-red-600 transition">Projects</a>
+<a href="#experience" class="text-2xl hover:text-red-600 transition">Experience</a>
+<a href="#contact" class="text-2xl hover:text-red-600 transition">Contact</a>
+  </div>
+</nav>
+
+<!-- Main Content Starts -->
+<main class="pt-16">
+
+<!-- Hero Section -->
+<section id="home" class="bg-gradient-to-br from-red-600 via-red-500 to-red-700 text-white py-32 mt-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+        <div class="w-52 h-64 mx-auto mb-8 overflow-hidden border-4 border-white shadow-lg">
+            <img src="headshot.jpg" alt="Anthony Coutts" class="w-full h-full object-cover" />
+        </div>
+        <h1 class="text-5xl md:text-6xl font-bold mb-6">Anthony Coutts</h1>
+        <p class="text-xl md:text-2xl mb-8 opacity-90">Data Science & STP Student | WPI Soccer Player</p>
+        <p class="text-lg mb-12 max-w-2xl mx-auto opacity-80">
+            Passionate about using data to serve the public and creating compelling visualizations that tell meaningful stories.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#projects" class="bg-white text-red-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">
+                View My Work
+            </a>
+            <a href="#contact" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-red-600 transition duration-300">
+                Get In Touch
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 bg-white">
+    <div class="mx-auto px-4 w-11/12 max-w-8xl">
+        <h2 class="text-5xl font-bold text-center mb-16 text-gray-800">About Me</h2> <!-- bigger title -->
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h3 class="text-3xl font-semibold mb-6 text-gray-800">Hello! I'm Anthony</h3> <!-- bigger subheading -->
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                    I am a Data Science and Society, Technology and Policy (STP) double major at Worcester Polytechnic Institute 
+                    graduating in Spring of 2026. I am also a member of the men's soccer team. I'm interested in using and 
+                    leveraging data to serve the public.
+                </p>
+                <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                    In addition, I enjoy creating creative data visualization to communicate findings and tell stories. 
+                    In my free time I enjoy practicing soccer and running.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <span class="skill-tag bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-base font-medium">R</span>
+                    <span class="skill-tag bg-green-100 text-green-800 px-4 py-2 rounded-full text-base font-medium">Python</span>
+                    <span class="skill-tag bg-red-100 text-red-800 px-4 py-2 rounded-full text-base font-medium">Java</span>
+                    <span class="skill-tag bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-base font-medium">SQL</span>
+                    <span class="skill-tag bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-base font-medium">Data Analysis</span>
+                    <span class="skill-tag bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full text-base font-medium">Data Visualization</span>
+                    <span class="skill-tag bg-pink-100 text-pink-800 px-4 py-2 rounded-full text-base font-medium">Excel</span>
+                    <span class="skill-tag bg-teal-100 text-teal-800 px-4 py-2 rounded-full text-base font-medium">Optimization</span>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="w-64 h-64 bg-gradient-to-br from-red-500 to-red-800 rounded-full mx-auto mb-8 flex items-center justify-center text-9xl">
+                    🎓
+                </div>
+                <div class="bg-gray-100 p-8 rounded-lg">
+                    <h4 class="font-semibold text-gray-800 mb-6 text-xl">Education</h4>
+                    <div class="mb-6">
+                        <p class="text-gray-800 font-medium text-lg">Worcester Polytechnic Institute</p>
+                        <p class="text-gray-700 text-base">B.S. Data Science & STP</p>
+                        <p class="text-gray-700 text-base">GPA: 3.94</p>
+                        <p class="text-gray-700 text-base">2022-2026</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-800 font-medium text-lg">Millis High School</p>
+                        <p class="text-gray-700 text-base">High School Diploma</p>
+                        <p class="text-gray-700 text-base">2018-2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Coursework Section -->
+<section class="py-20 bg-white border-t border-gray-100">
+    <div class="mx-auto px-4 w-11/12 max-w-8xl">
+        <h2 class="text-5xl font-bold text-center mb-16 text-gray-800">Relevant Coursework</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="bg-gray-100 rounded-lg p-10">
+                <h3 class="text-3xl font-semibold mb-8 text-gray-800 flex items-center">
+                    <span class="text-4xl mr-4">🏛️</span>
+                    STP Courses
+                </h3>
+                <ul class="space-y-4 text-lg text-gray-700">
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-3">•</span>
+                        Constitutional Law
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-3">•</span>
+                        Public Economics
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-3">•</span>
+                        Development Economics
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-3">•</span>
+                        Environmental Policy & Law
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-3">•</span>
+                        Topics in International Politics
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-blue-600 mr-3">•</span>
+                        American Public Policy
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-gray-100 rounded-lg p-10">
+                <h3 class="text-3xl font-semibold mb-8 text-gray-800 flex items-center">
+                    <span class="text-4xl mr-4">📊</span>
+                    Data Science Courses
+                </h3>
+                <ul class="space-y-4 text-lg text-gray-700">
+                    <li class="flex items-start">
+                        <span class="text-purple-600 mr-3">•</span>
+                        Data Science I–III
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-600 mr-3">•</span>
+                        Mathematical Methods in Decision Making
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-600 mr-3">•</span>
+                        Linear Programming
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-600 mr-3">•</span>
+                        Applied Statistics I & II
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-600 mr-3">•</span>
+                        Business Data Management
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-600 mr-3">•</span>
+                        Data Analysis for Decision Making
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-600 mr-3">•</span>
+                        Database Systems I
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-600 mr-3">•</span>
+                        Probability Theory
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-600 mr-3">•</span>
+                        Matrices and Linear Algebra
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-purple-600 mr-3">•</span>
+                        Algorithms
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="py-20 bg-gray-200">
+    <div class="mx-auto px-4 w-11/12 max-w-8xl">
+        <h2 class="text-5xl font-bold text-center mb-16 text-gray-800">My Research Projects</h2>
+        <div class="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                <div class="h-56 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-7xl">
+                    📚
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">University Syllabi Inclusivity Analysis</h3>
+                    <p class="text-gray-700 mb-6 text-base leading-relaxed">
+                        Analyzed a dataset of 169 university syllabi for key inclusivity metrics. Determined which demographics of instructors were likely to use 
+                        inclusive language using classification trees and impurity measures (weighted entropy). Published results in a peer-reviewed journal.
+                    </p>
+                    <div class="mb-6">
+                        <p class="text-base font-medium text-gray-700 mb-3">Advisors:</p>
+                        <p class="text-base text-gray-600">Prof. Francesca Bernardi, Prof. Crystal Brown</p>
+                    </div>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded text-sm">R</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded text-sm">Data Visualization</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded text-sm">Data Analysis</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded text-sm">Research & Writing</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1514339/full" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:text-blue-900 font-semibold text-base">Published Paper</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                <div class="h-56 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center text-7xl">
+                    🧠
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Mental Health Prediction in Middle School Students</h3>
+                    <p class="text-gray-700 mb-6 text-base leading-relaxed">
+                        Predicted mental health outcomes using data from 500+ middle school students who took the RCADS-25 questionnaire. 
+                        Used machine learning to classify depression/anxiety levels and identified key predictive symptoms through feature importance analysis.
+                    </p>
+                    <div class="mb-6">
+                        <p class="text-base font-medium text-gray-700 mb-3">Advisor:</p>
+                        <p class="text-base text-gray-600">Prof. Benjamin Nephew</p>
+                    </div>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded text-sm">Python</span>
+                        <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded text-sm">SKLearn</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded text-sm">Random Forests</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded text-sm">Data Analysis</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                <div class="h-56 bg-gradient-to-br from-red-500 to-pink-600 flex items-center justify-center text-7xl">
+                    🎓
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">CS Student Success Program Analysis</h3>
+                    <p class="text-gray-700 mb-6 text-base leading-relaxed">
+                        Currently analyzing a program that aids low-income computer science students in integrating and succeeding at WPI. 
+                        Analyzing both quantitative and qualitative survey data as well as reviewing different measures of academic success.
+                    </p>
+                    <div class="mb-6">
+                        <p class="text-base font-medium text-gray-700 mb-3">Advisors:</p>
+                        <p class="text-base text-gray-600">Prof. Francesca Bernardi, Prof. Crystal Brown</p>
+                    </div>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded text-sm">R</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded text-sm">Data Visualization</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded text-sm">Data Analysis</span>
+                    </div>
+                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-6">
+                        <p class="text-base text-yellow-800 font-semibold">🚧 Currently in progress</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                <div class="h-56 bg-gradient-to-br from-indigo-500 to-blue-600 flex items-center justify-center text-7xl">
+                    🗳️
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Presidential Campaign Schedule Optimization</h3>
+                    <p class="text-gray-700 mb-6 text-base leading-relaxed">
+                        Optimized Kamala Harris's 2024 campaign schedule using linear optimization. Analyzed win percentage changes after state visits, 
+                        extrapolated effects for unvisited states, and determined optimal campaign stops to maximize electoral college votes.
+                    </p>
+                    <div class="mb-6">
+                        <p class="text-base font-medium text-gray-700 mb-3">Team Members:</p>
+                        <p class="text-base text-gray-600">Tora Ito, Floris Huiskers</p>
+                    </div>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded text-sm">Linear Optimization</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded text-sm">Python</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded text-sm">Data Collection</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="https://youtu.be/uCw0_R7rsG4" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:text-blue-900 font-semibold text-base">View Video Presentation</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                <div class="h-56 bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center text-7xl">
+                    🏀
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">March Madness Bracket Predictor</h3>
+                    <p class="text-gray-700 mb-6 text-base leading-relaxed">
+                        Built a March Madness prediction model using random forests on historical tournament data. Created a scoring function 
+                        with feature importance weights and ran 500 bracket simulations in Excel to predict tournament outcomes.
+                    </p>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded text-sm">Python</span>
+                        <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded text-sm">SKLearn</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded text-sm">R</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded text-sm">Excel</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded text-sm">Data Analysis</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+                <div class="h-56 bg-gradient-to-br from-teal-500 to-green-600 flex items-center justify-center text-7xl">
+                    🔬
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">STEM Faculty Launch Program Analysis</h3>
+                    <p class="text-gray-700 mb-6 text-base leading-relaxed">
+                        Analyzed the success of WPI's STEM Faculty Launch program (2015-2020) for minorities pursuing higher education careers. 
+                        Created animated visualizations of applicant origins and compared job outcomes between attendees and non-attendees.
+                    </p>
+                    <div class="mb-6">
+                        <p class="text-base font-medium text-gray-700 mb-3">Advisor:</p>
+                        <p class="text-base text-gray-600">Prof. Francesca Bernardi</p>
+                    </div>
+                    <div class="flex flex-wrap gap-3 mb-6">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded text-sm">R</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded text-sm">Data Visualization</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded text-sm">Data Analysis</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded text-sm">Data Collection</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="py-20 bg-white">
+    <div class="mx-auto px-4 w-11/12 max-w-8xl">
+        <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Work Experience</h2>
+        <div class="space-y-8">
+            <!-- Experience 1 -->
+            <div class="bg-gray-100 rounded-lg p-8 card-hover">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Legislative Aide Intern</h3>
+                        <p class="text-blue-600 font-medium">Office of Massachusetts State Representative Marcus Vaughn</p>
+                    </div>
+                    <div class="text-gray-600 mt-2 md:mt-0">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">June 2025 - Current</span>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4">
+                    Current internship working directly with state legislative office operations and policy development.
+                </p>
+                <div class="bg-green-50 border-l-4 border-green-400 p-3">
+                    <p class="text-sm text-green-800 font-medium">🚧 Currently in progress</p>
+                </div>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="bg-gray-100 rounded-lg p-8 card-hover">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Data Analysis Undergraduate Researcher</h3>
+                        <p class="text-blue-600 font-medium">Worcester Polytechnic Institute</p>
+                    </div>
+                    <div class="text-gray-600 mt-2 md:mt-0">
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">June 2023 - Current</span>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4">
+                    Performed data analysis on various projects (STEM Faculty Launch Project, University Syllabi Inclusivity Project, and 
+                    Low-Income Student Success in CS). Led weekly meetings to deliver project updates and presented findings to stakeholders and researchers.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">R</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Excel</span>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Data Analysis</span>
+                    <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">Data Visualization</span>
+                </div>
+            </div>
+
+            <!-- Experience 3 -->
+            <div class="bg-gray-100 rounded-lg p-8 card-hover">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Soccer Referee</h3>
+                        <p class="text-blue-600 font-medium">US Soccer</p>
+                    </div>
+                    <div class="text-gray-600 mt-2 md:mt-0">
+                        <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">September 2017 - Current</span>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4">
+                    Communicate effectively with players, coaches, and other officials. Manage active play with quick decision making. 
+                    Apply new skills by attending training classes. Facilitate a safe playing environment.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Communication</span>
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Decision Making</span>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Teamwork</span>
+                </div>
+            </div>
+
+            <!-- Experience 4 -->
+            <div class="bg-gray-100 rounded-lg p-8 card-hover">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                    <div>
+                        <h3 class="text-xl font-semibold text-gray-800">Home Event Staff</h3>
+                        <p class="text-blue-600 font-medium">Worcester Polytechnic Institute</p>
+                    </div>
+                    <div class="text-gray-600 mt-2 md:mt-0">
+                        <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">November 2022 - Current</span>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4">
+                    Perform sport-specific tasks to ensure safe and smooth event execution. Set up and break down equipment as a team.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Teamwork</span>
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Communication</span>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Hospitality</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- JavaScript -->
+<script>
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  mobileMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+        mobileMenu.classList.add('hidden');
+      }
+    });
+  });
+
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 100) {
+      nav.classList.add('shadow-lg');
+    } else {
+      nav.classList.remove('shadow-lg');
+    }
+  });
+</script>
+
+</body>
+</html>
